@@ -31,7 +31,7 @@ func main() {
 		counter += 1
 		return errors.New("error")
 	})
-	fmt.Printf("counter value: %d", counter) // prints 1
+	fmt.Printf("counter value: %d\n", counter) // prints 1
 
 	// This function doesn't fail, so Once's going to change its state exactly one time.
 	for i := 0; i < 10; i++ {
@@ -41,7 +41,7 @@ func main() {
 		})
 	}
 
-	fmt.Printf("counter value: %d", counter) // prints 2
+	fmt.Printf("counter value: %d\n", counter) // prints 2
 
 }
 ```
